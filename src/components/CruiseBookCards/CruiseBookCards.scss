@@ -32,4 +32,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &__subhead{
+        color: white; 
+    }
+
+    &__head{
+        color: white; 
+    }
+
+    &__subfoot{
+        color: white; 
+    }
+
+    &__price{
+        color: white; 
+    }
 }
+
