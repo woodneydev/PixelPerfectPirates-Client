@@ -5,25 +5,30 @@
     background-image: url("../../assets/images/card-images/weekend_getaways.jpg");
     background-position: center;
     background-size: cover;
+    width: 110%;
+    text-align: center;
     
 }
 
 .caribbean {
     background-image: url("../../assets/images/card-images/carribean_cruises.jpg");
+    text-align: center;
 }
 
 .europe {
     background-image: url("../../assets/images/card-images/europe_cruises.jpg");
+    text-align: center;
 }
 
 .alaska {
     background-image: url("../../assets/images/card-images/alaska\ cruises.jpg");
+    text-align: center;
 }
 
 .cruise-card {
     
-    width: 328px;
-    margin-top: $mobile-spacing-between-components;
+    width: 87%;
+    margin-top: 1rem;
     border-radius: 4px;
     height: 300px;
     @include component-left-right-margin;

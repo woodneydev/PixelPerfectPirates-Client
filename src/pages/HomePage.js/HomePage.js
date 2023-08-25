@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import PopupCard from "../../components/PopupCard/PopupCard";
 import axios from "axios";
 import NewToCard from "../../components/NewToCard/NewToCard";
+
+
 function HomePage() {
 
     const initialState = {
