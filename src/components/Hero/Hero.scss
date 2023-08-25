@@ -1,4 +1,36 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
 
 .hero {
     background-image: url("../../assets/images/Family_Paddle_Boarding_on_Vacation_Polyvision_1920_480_FAM-NF_2x.jpg");
+    background-position: right;
+    height: 35vh;
+    
+
+    &__content {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.14);
+        width: 100%;
+
+        &-tagline {
+            
+            &-sub {
+                color: white;
+                @include sub-header;
+            }
+
+            &-header {
+                color: white;
+                @include page-header;
+            }
+        }
+
+        &-btn {
+            margin-top: 1rem;
+        }
+    }
 }

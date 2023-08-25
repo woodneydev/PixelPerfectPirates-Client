@@ -14,7 +14,7 @@ function Hero() {
                     <h2 className="hero__content-tagline-header">My Royal Cruise</h2>
                 </div>
                 <div className="hero__content-btn">
-                    <ActionButton />
+                    <ActionButton innerText={"SIGN IN"} />
                 </div>
             </div>
         </section>

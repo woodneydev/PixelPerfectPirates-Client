@@ -10,7 +10,7 @@ function ActionButton({innerText, color = "blue", link = false, handleButtonClic
     }
     
     if (handleButtonClick) {
-        return <button className={defaultClass} onClick={handleButtonClick}>{text}</button>
+        return <button className={defaultClass} onClick={handleButtonClick}>{innerText}</button>
     }
 
     return (

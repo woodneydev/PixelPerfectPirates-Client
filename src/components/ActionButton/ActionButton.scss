@@ -1,14 +1,18 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
 .action-button {
-    border-radius: .3125rem;
+    border-radius: 2px;
     border: none;
-    
-    
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 100px;
+    @include labels-links-buttons;
 
 }
 
 .blue {
-    background-color: #005EDC;
+    background-color: #005edc;
     color: white;
 }
 
