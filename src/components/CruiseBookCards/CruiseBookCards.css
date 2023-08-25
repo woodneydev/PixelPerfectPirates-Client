@@ -1,0 +1,51 @@
+/* <--- Media Query ---> */
+/* <--- Font styling w/ media queries ---> */
+/* <--- Element Spacing w/ media queries ---> */
+.cococay {
+  background-image: url("../../assets/images/card-images/weekend_getaways.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.caribbean {
+  background-image: url("../../assets/images/card-images/carribean_cruises.jpg");
+}
+
+.europe {
+  background-image: url("../../assets/images/card-images/europe_cruises.jpg");
+}
+
+.alaska {
+  background-image: url("../../assets/images/card-images/alaska cruises.jpg");
+}
+
+.cruise-card {
+  width: 328px;
+  margin-top: 1rem;
+  border-radius: 4px;
+  height: 300px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .cruise-card {
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
+  }
+}
+.cruise-card__subhead {
+  color: white;
+}
+.cruise-card__head {
+  color: white;
+}
+.cruise-card__subfoot {
+  color: white;
+}
+.cruise-card__price {
+  color: white;
+}/*# sourceMappingURL=CruiseBookCards.css.map */
