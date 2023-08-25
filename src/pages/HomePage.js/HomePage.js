@@ -80,7 +80,8 @@ function HomePage() {
     return (
         <>
             <Hero />
-            <NewToCard />
+            {/* <NewToCard /> */}
+            {newUser ? <NewToCard /> : null}
             {cardElemts}
             <form className="form" onSubmit={handleEmailSubmit}>
                 {displayPopup ? <PopupCard formData={formData} handeExitClick={handeExitClick} handleFormChange={handleFormChange} /> : null }

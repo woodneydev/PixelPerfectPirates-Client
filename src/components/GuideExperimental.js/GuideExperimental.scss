@@ -19,7 +19,6 @@
 
 .questionaire-prompt {
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.203);
 
     .selections {
         color: white;
@@ -46,6 +45,11 @@
     // background-color: ;
 }
 
-.action-button {
-    width: 100px;
+.survey-button {
+    border: none;
+    width: 50px;
+    color: rgb(0, 0, 102);
+    background-color: rgb(253, 187, 17);
+    border-radius: 3px;
+    
 }
