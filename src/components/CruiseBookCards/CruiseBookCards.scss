@@ -1,0 +1,35 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.cococay {
+    background-image: url("../../assets/images/card-images/weekend_getaways.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.caribbean {
+    background-image: url("../../assets/images/card-images/carribean_cruises.jpg");
+}
+
+.europe {
+    background-image: url("../../assets/images/card-images/europe_cruises.jpg");
+}
+
+.alaska {
+    background-image: url("../../assets/images/card-images/alaska\ cruises.jpg");
+}
+
+.cruise-card {
+    
+    width: 328px;
+    margin-top: $mobile-spacing-between-components;
+    border-radius: 4px;
+    height: 300px;
+    @include component-left-right-margin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

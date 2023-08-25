@@ -8,19 +8,22 @@
     
 
     &__content {
-        padding: 1rem;
+        @include component-left-right-padding;
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.14);
+        background-color: rgba(0, 0, 0, 0.186);
         width: 100%;
+        font-family: "Kapra Condensed";
 
         &-tagline {
             
             &-sub {
                 color: white;
                 @include sub-header;
+                margin-bottom: 0;
+                padding-bottom: 0;
             }
 
             &-header {
@@ -30,7 +33,7 @@
         }
 
         &-btn {
-            margin-top: 1rem;
+            margin-top: .5rem;
         }
     }
 }

@@ -1,2 +1,10 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
+
+
+
+.cruise-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,4 +1,8 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
 .footer{
+    margin-top: $mobile-spacing-between-components;
     
     &__logos{
         background-color: #203559;
