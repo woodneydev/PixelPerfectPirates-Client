@@ -74,7 +74,6 @@ function HomePage() {
               <CruiseBookCards destination={destination} />  
             </section>
             
-    
         )
     })
 
@@ -86,7 +85,6 @@ function HomePage() {
             <form className="form" onSubmit={handleEmailSubmit}>
                 {displayPopup ? <PopupCard formData={formData} handeExitClick={handeExitClick} handleFormChange={handleFormChange} /> : null }
             </form>
-            <GuideExperimental />
         </>
     )
 }

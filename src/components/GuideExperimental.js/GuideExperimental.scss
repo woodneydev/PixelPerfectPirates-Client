@@ -1,0 +1,51 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.final {
+    
+    &__title {
+        @include sub-header;
+        text-align: start;
+        color: white;
+    }
+
+    &__answer {
+      
+        color: white;
+        
+    }
+
+}
+
+.questionaire-prompt {
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.203);
+
+    .selections {
+        color: white;
+        
+        margin-right: 20px;
+
+        &-radio {
+            margin-right: 3px;
+        }
+    }
+}
+
+.questionaire-prompt-title {
+    color: white;
+  
+    margin-bottom: 10px;
+}
+
+.selections-radio {
+    margin-left: 5px;
+}
+
+.survey-button {
+    // background-color: ;
+}
+
+.action-button {
+    width: 100px;
+}
