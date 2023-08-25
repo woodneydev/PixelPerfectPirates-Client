@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import PopupCard from "../../components/PopupCard/PopupCard";
 import axios from "axios";
 import NewToCard from "../../components/NewToCard/NewToCard";
+import GuideExperimental from "../../components/GuideExperimental.js/GuideExperimental";
 function HomePage() {
 
     const initialState = {
@@ -85,7 +86,7 @@ function HomePage() {
             <form className="form" onSubmit={handleEmailSubmit}>
                 {displayPopup ? <PopupCard formData={formData} handeExitClick={handeExitClick} handleFormChange={handleFormChange} /> : null }
             </form>
-            
+            <GuideExperimental />
         </>
     )
 }

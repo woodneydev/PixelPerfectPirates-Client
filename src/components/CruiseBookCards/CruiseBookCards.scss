@@ -35,18 +35,32 @@
 
     &__subhead{
         color: white; 
+        text-align: center;
     }
 
     &__head{
         color: white; 
+        text-align: center;
     }
 
     &__subfoot{
         color: white; 
+        text-align: center;
     }
 
     &__price{
         color: white; 
+        text-align: center;
     }
 }
 
+.cruise-card-background {
+    background-color: rgba(0, 0, 0, 0.263);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import "./ActionButton.scss";
 
-function ActionButton({innerText, color = "blue", link = false, handleButtonClick = false}) {
+function ActionButton({innerText, color = "blue", handleButtonClick = false, link = false, }) {
 
     const defaultClass = color === "blue" ? "action-button blue" : "action-button yellow"
 
