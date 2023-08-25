@@ -1,0 +1,24 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+
+.new-to {
+    
+    background-image: url("../../assets/images/cruise-boat.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    &__title {
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+}

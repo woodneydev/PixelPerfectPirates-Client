@@ -6,7 +6,7 @@ function ActionButton({innerText, color = "blue", link = false, handleButtonClic
     const defaultClass = color === "blue" ? "action-button blue" : "action-button yellow"
 
     if (link) {
-        return <Link to={Link}><button className={defaultClass} >{innerText}</button></Link> 
+        return <Link to={link}><button className={defaultClass} >{innerText}</button></Link> 
     }
     
     if (handleButtonClick) {

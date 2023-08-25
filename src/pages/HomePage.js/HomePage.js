@@ -4,6 +4,7 @@ import CruiseBookCards from "../../components/CruiseBookCards/CruiseBookCards";
 import { useEffect, useState } from "react";
 import PopupCard from "../../components/PopupCard/PopupCard";
 import axios from "axios";
+import NewToCard from "../../components/NewToCard/NewToCard";
 function HomePage() {
 
     const initialState = {
@@ -79,6 +80,7 @@ function HomePage() {
     return (
         <>
             <Hero />
+            <NewToCard />
             {cardElemts}
             <form className="form" onSubmit={handleEmailSubmit}>
                 {displayPopup ? <PopupCard formData={formData} handeExitClick={handeExitClick} handleFormChange={handleFormChange} /> : null }
