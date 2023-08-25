@@ -1,0 +1,27 @@
+.footer{
+    
+    &__logos{
+        background-color: #203559;
+        
+    
+    
+    &--container{
+    display: flex; 
+    flex-direction: column;
+    gap: 0.625rem; 
+    }
+
+}
+   
+
+
+    &__image,&__image2, &__image3, &__image4{
+        width:30%; 
+        margin:0 auto; 
+        border-bottom: 2x solid black; 
+    }
+
+    
+
+
+}
