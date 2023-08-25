@@ -2,7 +2,7 @@
 @use "../../styles/mixins" as *;
 
 .footer {
-    margin-top: $mobile-spacing-between-components;
+    margin-top: 1.5rem;
 
     &__logos {
         background-color: #203559;

@@ -10,6 +10,7 @@ function PopupCard({handeExitClick, handleFormChange, formData}) {
                 <div className="popup__img">
                     <div className="popup__img-exit" onClick={handeExitClick}><img className="popup__img-exit-icon" src={exitIcon} /> </div>
                 </div>
+                <div className="popup__text-container">
                 <h3 className="popup__headline">Sign up and recieve $50 OFF your next sailing!</h3>
                 <p className="popup__details popup__details--one">Plus, get access to exclusive discounts, promotions and special rates</p>
                 <div className="popup__interact">
@@ -17,7 +18,7 @@ function PopupCard({handeExitClick, handleFormChange, formData}) {
                         <span className="popup__interact-label-text">Enter your email address</span>
                     <input className="popup__interact-label-input" name="email" onChange={handleFormChange} value={formData.email} />  
                     </label>
-                    
+                    </div>
                     <ActionButton innerText={"Sign up"} />
                 </div>
             </div>
