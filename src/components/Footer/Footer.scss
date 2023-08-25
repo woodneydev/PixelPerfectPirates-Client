@@ -1,31 +1,36 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
-.footer{
+.footer {
     margin-top: $mobile-spacing-between-components;
-    
-    &__logos{
+
+    &__logos {
         background-color: #203559;
-        
-    
-    
-    &--container{
-    display: flex; 
-    flex-direction: column;
-    gap: 0.625rem; 
+
+
+
+        &--container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem;
+        }
     }
 
-}
-   
 
 
-    &__image,&__image2, &__image3, &__image4{
-        width:30%; 
-        margin:0 auto; 
-        border-bottom: 2x solid black; 
+
+
+    &__image,
+    &__image2,
+    &__image3,
+    &__image4 {
+        width: 30%;
+        margin: 0 auto;
+        border-bottom: 2x solid black;
+
+
+
+
     }
-
-    
-
 
 }
