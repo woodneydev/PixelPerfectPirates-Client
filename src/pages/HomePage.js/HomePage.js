@@ -3,11 +3,18 @@ import Hero from "../../components/Hero/Hero";
 import CruiseBookCards from "../../components/CruiseBookCards/CruiseBookCards";
 import { useEffect, useState } from "react";
 import PopupCard from "../../components/PopupCard/PopupCard";
+import axios from "axios";
 function HomePage() {
+
+    const initialState = {
+        email: "",
+    }
 
     const [newUser, setNewUser] = useState(false);
     const [displayPopup, setDisplayPopup] = useState(false);
+    const [formData, setFormData] = useState({initialState})
 
+    const postUrl = `http://localhost:8080/users/user`
 
     useEffect(() => {
         setTimeout( () => {
@@ -19,12 +26,41 @@ function HomePage() {
         setDisplayPopup(prev => !prev);
     }
 
-    const handleEmailSubmit = (event) => {
-        event.PreventDefault()
+    const handleFormChange = (event) => {
+        setFormData({...formData, [event.target.name]: event.target.value})
+        console.log(formData)
     }
 
+    const handleEmailSubmit = (event) => {
+        event.preventDefault()
+
+        const postObj = {
+            email: formData.email
+        }
+
+        axios.post(postUrl, postObj)
+            .then(response => {
+                console.log(response)
+
+                setFormData(initialState)
+                setDisplayPopup(false)
+                
+            })
+            .catch(error => {
+                console.log(error.response.data)
+                if (error.response.data.message.includes("not found")) {
+                    setNewUser (true)
+                }
+                
+                setFormData(initialState)
+                setDisplayPopup(false)
+            })
+    }
+
+    const travelTerminology = newUser ? "WEEKEND TRAVEL" : "WEEKEND GETAWAYS";
+
     const cardsList = [
-        {subhead: "PERFECT DAY AT COCOCAY", head: "WEEKEND GETAWAYS", subfoot: "STARTING FROM", price: "$221", stylingClass: "cococay"},
+        {subhead: "PERFECT DAY AT COCOCAY", head: travelTerminology, subfoot: "STARTING FROM", price: "$221", stylingClass: "cococay"},
         {subhead: "7 NIGHT", head: "CARRIBBEAN CRUISES", subfoot: "STARTING FROM", price: "$447", stylingClass: "caribbean"},
         {subhead: "2023-2024", head: "EUROPE CRUISES", subfoot: "STARTING FROM", price: "$168", stylingClass: "europe"},
         {subhead: "2023-2024", head: "ALASKA CRUISES", subfoot: "STARTING FROM", price: "$270", stylingClass: "alaska"},
@@ -45,7 +81,7 @@ function HomePage() {
             <Hero />
             {cardElemts}
             <form className="form" onSubmit={handleEmailSubmit}>
-                {displayPopup ? <PopupCard handeExitClick={handeExitClick} /> : null }
+                {displayPopup ? <PopupCard formData={formData} handeExitClick={handeExitClick} handleFormChange={handleFormChange} /> : null }
             </form>
             
         </>

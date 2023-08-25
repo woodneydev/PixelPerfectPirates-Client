@@ -2,7 +2,8 @@ import ActionButton from "../ActionButton/ActionButton";
 import exitIcon from "../../assets/images/icons/close-icon-blue.svg"
 import "./PopupCard.scss";
 
-function PopupCard({handeExitClick}) {
+function PopupCard({handeExitClick, handleFormChange, formData}) {
+
     return (
         <div className="popup-container">
             <div className="popup">
@@ -14,7 +15,7 @@ function PopupCard({handeExitClick}) {
                 <div className="popup__interact">
                     <label className="popup__interact-label">
                         <span className="popup__interact-label-text">Enter your email address</span>
-                    <input className="popup__interact-label-input" name="email" />  
+                    <input className="popup__interact-label-input" name="email" onChange={handleFormChange} value={formData.email} />  
                     </label>
                     
                     <ActionButton innerText={"Sign up"} />
